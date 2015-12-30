@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-WA-jVS">
+                                <rect key="frame" x="40" y="40" width="520" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.1843137255" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7Az-9g-xSh"/>
+                                </constraints>
+                                <state key="normal" title="Login Native">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jW-UC-vxW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xag-ik-hX3">
+                                <rect key="frame" x="40" y="110" width="520" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.1843137255" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="50s-S9-1PD"/>
+                                </constraints>
+                                <state key="normal" title="Login System Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMS-ko-7m4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idL-Jr-cLw">
+                                <rect key="frame" x="40" y="180" width="520" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.1843137255" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="27X-sF-jAc"/>
+                                </constraints>
+                                <state key="normal" title="Login Web">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72g-Y8-Acu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7C-ot-M1J">
+                                <rect key="frame" x="40" y="250" width="520" height="50"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.1843137255" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="emy-QD-g6E"/>
+                                </constraints>
+                                <state key="normal" title="Login Browser">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dt-zS-jf9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xag-ik-hX3" firstAttribute="top" secondItem="cRd-WA-jVS" secondAttribute="bottom" constant="20" id="0es-c6-VPm"/>
+                            <constraint firstItem="idL-Jr-cLw" firstAttribute="top" secondItem="xag-ik-hX3" secondAttribute="bottom" constant="20" id="22H-j1-grd"/>
+                            <constraint firstItem="cRd-WA-jVS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2pQ-3d-BBL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cRd-WA-jVS" secondAttribute="trailing" constant="20" id="6Ry-d0-rMi"/>
+                            <constraint firstItem="j7C-ot-M1J" firstAttribute="trailing" secondItem="idL-Jr-cLw" secondAttribute="trailing" id="HfC-AK-NwS"/>
+                            <constraint firstItem="idL-Jr-cLw" firstAttribute="trailing" secondItem="xag-ik-hX3" secondAttribute="trailing" id="R2z-W6-aF0"/>
+                            <constraint firstItem="j7C-ot-M1J" firstAttribute="top" secondItem="idL-Jr-cLw" secondAttribute="bottom" constant="20" id="YpN-sv-RX0"/>
+                            <constraint firstItem="cRd-WA-jVS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZeG-os-Rat"/>
+                            <constraint firstItem="j7C-ot-M1J" firstAttribute="leading" secondItem="idL-Jr-cLw" secondAttribute="leading" id="gBW-2f-Qna"/>
+                            <constraint firstItem="cRd-WA-jVS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gFi-Hl-Ibs"/>
+                            <constraint firstItem="xag-ik-hX3" firstAttribute="leading" secondItem="cRd-WA-jVS" secondAttribute="leading" id="nLT-y3-mz8"/>
+                            <constraint firstItem="xag-ik-hX3" firstAttribute="trailing" secondItem="cRd-WA-jVS" secondAttribute="trailing" id="qnW-fS-dPg"/>
+                            <constraint firstItem="cRd-WA-jVS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="sjT-Yg-koz"/>
+                            <constraint firstItem="idL-Jr-cLw" firstAttribute="leading" secondItem="xag-ik-hX3" secondAttribute="leading" id="uLx-5s-rSD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZeG-os-Rat"/>
+                                <exclude reference="gFi-Hl-Ibs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
